@@ -15,7 +15,7 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  background: #fce7e7;
+  background: white;
   color: #444444;
 }
 
@@ -236,7 +236,7 @@ h6 {
   padding: 20px 0 15px 0;
   font-size: 18px;
   font-weight: 500;
-  color: #012970;
+  color: black;
   font-family: "Poppins", sans-serif;
 }
 
@@ -381,7 +381,7 @@ h6 {
   z-index: 997;
   height: 60px;
   box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
-  background-color: #681212;
+  background-color: gray;
   padding-left: 20px;
   /* Toggle Sidebar Button */
   /* Search Bar */
@@ -669,6 +669,7 @@ h6 {
 
 .sidebar-nav .nav-item {
   margin-bottom: 5px;
+  background-color: gray;
 }
 .sidebar-nav .nav-item .active {
   background-color: #e8c2c2;
@@ -688,9 +689,9 @@ h6 {
   align-items: center;
   font-size: 15px;
   font-weight: 600;
-  color: #771E1E;
+  color: white;
   transition: 0.3;
-  background: #f6f9ff;
+  background: gray;
   padding: 10px 15px;
   border-radius: 4px;
 }
@@ -698,7 +699,7 @@ h6 {
 .sidebar-nav .nav-link i {
   font-size: 16px;
   margin-right: 10px;
-  color: #771E1E;
+  color: white;
 }
 
 .sidebar-nav .nav-link.collapsed {
@@ -712,7 +713,7 @@ h6 {
 
 .sidebar-nav .nav-link:hover {
   color: #fff;
-  background: #771E1E;
+  background: black;
 }
 
 .sidebar-nav .nav-link:hover i {
@@ -1227,7 +1228,7 @@ h6 {
 
 .footer .copyright {
   text-align: center;
-  color: #a40b0b;
+  color: gray;
 }
 
 .footer .credits {
