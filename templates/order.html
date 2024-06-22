@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% block title %} Dashboard {% endblock %}
+
+{% block content %}
+
+<!-- ======= Main Content ======= -->
+<main id="main" class="main">
+    <div class="pagetitle">
+        <h1>Report Orders</h1>
+        <nav>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item active">Report Orders</li>
+            </ol>
+        </nav>
+    </div>
+
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">Area Tables</h6>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>User</th>
+                            <th>Alamat</th>
+                            <th>Nama Barang</th>
+                            <th>Jumlah Barang</th>
+                            <th>Status Pemesanan</th>
+                            <th>Harga</th>
+                            <th>Total Harga</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for order in orders %}
+                        <tr>
+                            <td>{{ order.user }}</td>                        
+                            <td>{{ order.address }}</td>
+                            <td>{{ order.item_id }}</td>
+                            <td>{{ order.item_name }}</td>
+                            <td>{{ order.status }}</td>
+                            <td>{{ order.quantity }} unit</td>
+                            <td>Rp {{ order.price | format_currency }}</td>
+                            <td>Rp {{ order.total_price | format_currency }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</main>
+<!-- ======= End of Main Content ======= -->
+
+{% endblock %}
